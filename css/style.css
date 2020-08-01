@@ -1,0 +1,132 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.box-notification{
+	margin: 20px;
+	width: 300px;
+	height: 190px;
+	background-color: rgba(0,0,0,0.1);
+	position:absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 20px;
+	border-radius: 10px;
+	transform: translateY(-115%);
+	transition: 0.4s;
+	overflow-y:scroll;
+	padding-top: 35px;
+}
+.close-box{
+	width: 20px;
+	height: 20px;
+	border:none;
+	position: fixed;
+	top: 10px;
+	left: 20px;
+	background-color: #fff;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+.box-notification-toggle{
+	transform: translateY(0%);
+	transition: 0.4s;
+}
+.notification{
+	width: 100%;
+	border-radius:8px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	transition: .4s;
+}
+
+.notification p{
+	color: #fff;
+	padding:8px;
+	font-size: 13px;
+}
+.notif-erro{
+
+	background-color: rgba(250,0,0,0.6);
+}
+.notif-sucess{
+
+	background-color: rgba(0,250,0,0.4);
+}
+
+
+.btn-close{
+	width: 16px;
+	height: 16px;
+	font-size: 16px;
+	background-color: #333;
+	color: #fff;
+	padding: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+
+form{
+	width: 400px;
+	margin: 30px auto;
+	background-color: #eee;
+	padding:20px;
+	border-radius: 10px;
+}
+
+form .form-group{
+	margin-bottom: 10px;
+}
+
+form .form-group label{
+	font-size: 1.2em;
+	font-family: tahoma;
+	max-width: 70px;
+	display: block;
+	background-color: #0af;
+	padding:3px 4px;
+	border-radius: 3px 3px 0 0;
+	color: #fff;
+}
+
+form .form-group input{
+	width: 100%;
+	padding: 10px;
+}
+form .form-group input:hover{
+	outline: #0af 1px solid;
+	
+}
+form .form-group select{
+	padding: 10px 25px;
+}
+
+form .form-group button{
+	background-color: #0af;
+	color: #fff;
+	padding: 10px;
+	border:none;
+	margin:0 auto;
+	display: block;
+}
